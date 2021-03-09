@@ -17,7 +17,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff;
+  background-color: #2f3640;
 }
 
 header {
@@ -58,11 +58,13 @@ footer {
 .tabsIconsContainer .navIcons__link input[type=radio] + i {
   padding: 10px;
   flex: 1;
+  color: white;
   text-align: center;
   font-size: 3rem;
 }
 .tabsIconsContainer .navIcons__link input[type=radio] + i p {
   margin-top: 5px;
+  color: white;
   font-size: 1.5rem;
 }
 .tabsIconsContainer .navIcons__link input[type=radio]:checked + * {
