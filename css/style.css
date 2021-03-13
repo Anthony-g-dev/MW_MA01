@@ -37,7 +37,7 @@ section.container {
 }
 .tabsIconsContainer .navIcons__link {
   margin: 5px;
-  flex-basis: 50%;
+  flex-basis: calc(50% - 12px);
   position: relative;
   display: flex;
   flex-direction: row;
@@ -95,7 +95,7 @@ section.container {
 /* Tablets (sm) */
 @media screen and (min-width: 768px) {
   .tabsIconsContainer .navIcons__link {
-    flex-basis: 33%;
+    flex-basis: calc(33% - 12px);
   }
 }
 /* Laptops (md) */
