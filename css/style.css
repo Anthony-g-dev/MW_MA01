@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0px;
   padding: 0px;
   max-width: 100%;
@@ -29,25 +30,49 @@ section.container {
 .tabsIconsContainer .navIcons {
   margin-left: 10px;
   margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .tabsIconsContainer .navIcons__link {
   margin: 5px;
-  flex-basis: calc(50% - 12px);
+  -ms-flex-preferred-size: calc(50% - 12px);
+      flex-basis: calc(50% - 12px);
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: -webkit-box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: -webkit-box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  -o-transition: box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), -webkit-box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   border-radius: 1rem;
 }
 .tabsIconsContainer .navIcons__link:hover {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 .tabsIconsContainer .navIcons__link input[type=radio] {
   position: absolute;
@@ -64,22 +89,33 @@ section.container {
 }
 .tabsIconsContainer .navIcons__link i {
   padding: 10px;
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   color: black;
   text-align: center;
   font-size: 3rem;
+  -webkit-transition: border-radius 0.3s, background-color 0.5s, color 0.3s;
+  -o-transition: border-radius 0.3s, background-color 0.5s, color 0.3s;
   transition: border-radius 0.3s, background-color 0.5s, color 0.3s;
 }
 .tabsIconsContainer .navIcons__link i p {
   margin-top: 5px;
   color: black;
   font-size: 1.5rem;
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
   transition: color 0.3s;
 }
 .tabsIconsContainer .tabsList {
   list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   overflow: hidden;
 }
 .tabsIconsContainer .tabsList li {
@@ -92,16 +128,16 @@ section.container {
 }
 
 /* ##### MEDIA QUERIES ##### */
-/* Tablets (sm) */
 @media screen and (min-width: 768px) {
   .tabsIconsContainer .navIcons__link {
-    flex-basis: calc(33% - 12px);
+    -ms-flex-preferred-size: calc(33% - 12px);
+        flex-basis: calc(33% - 12px);
   }
 }
-/* Laptops (md) */
 @media screen and (min-width: 992px) {
   .tabsIconsContainer .navIcons__link {
-    flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
 }
-/* Desktops (lg) */
